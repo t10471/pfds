@@ -1,0 +1,105 @@
+name:                ch02
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/ch02#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2017 Author name here
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Data.Set.Class 
+                     , Data.UnbalancedSet
+                     , Data.UnbalancedSet.Strict
+  build-depends:       base >= 4.7 && < 5
+                     , deepseq
+  default-language:    Haskell2010
+
+executable ex_2_1
+  hs-source-dirs:      app
+  main-is:             ex_2_1.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , ch02
+                     , QuickCheck
+  default-language:    Haskell2010
+executable ex_2_2
+  hs-source-dirs:      app
+  main-is:             ex_2_2.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , ch02
+                     , QuickCheck
+                     , quickcheck-assertions
+                     , criterion
+                     , hspec 
+                     , deepseq
+  default-language:    Haskell2010
+executable ex_2_3
+  hs-source-dirs:      app
+  main-is:             ex_2_3.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , ch02
+                     , QuickCheck
+                     , quickcheck-assertions
+                     , criterion
+                     , hspec 
+                     , deepseq
+  default-language:    Haskell2010
+executable ex_2_4
+  hs-source-dirs:      app
+  main-is:             ex_2_4.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , ch02
+                     , QuickCheck
+                     , quickcheck-assertions
+                     , criterion
+                     , hspec 
+                     , deepseq
+                     , abstract-par
+  default-language:    Haskell2010
+executable ex_2_5a
+  hs-source-dirs:      app
+  main-is:             ex_2_5a.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , ch02
+                     , QuickCheck
+                     , quickcheck-assertions
+                     , criterion
+                     , hspec 
+                     , deepseq
+  default-language:    Haskell2010
+executable ex_2_5b
+  hs-source-dirs:      app
+  main-is:             ex_2_5b.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , ch02
+                     , QuickCheck
+                     , quickcheck-assertions
+                     , criterion
+                     , hspec 
+                     , deepseq
+  default-language:    Haskell2010
+executable ex_2_6
+  hs-source-dirs:      app
+  main-is:             ex_2_6.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , ch02
+                     , QuickCheck
+                     , quickcheck-assertions
+                     , criterion
+                     , hspec 
+                     , deepseq
+  default-language:    Haskell2010

@@ -1,0 +1,54 @@
+name:                ch03
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/t10471/ch03#readme
+license:             BSD3
+license-file:        LICENSE
+author:              t10471
+maintainer:          t104711202@gmail.com
+copyright:           MIT
+category:            App
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+-- ex3_2.hs
+-- ex3_3.hs
+-- ex3_4.hs
+-- ex3_5.hs
+-- ex3_6.hs
+-- ex3_7.hs
+-- ex3_9.hs
+-- ex3_10a.hs
+-- ex3_10b.hs
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Data.Heap.Class
+                     , Data.BinomialHeap
+                     , Data.LeftishHeap
+                     , Data.RBTree
+                     , Data.WeightBasedHeap
+  build-depends:       base >= 4.7 && < 5
+                     , deepseq
+                     , QuickCheck
+                     , hspec 
+  default-language:    Haskell2010
+
+executable ex3_2
+  hs-source-dirs:      app
+  main-is:             ex3_2.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , ch03
+                     , deepseq
+                     , QuickCheck
+                     , hspec 
+  default-language:    Haskell2010
+executable ex3_3
+  hs-source-dirs:      app
+  main-is:             ex3_3.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , ch03
+  default-language:    Haskell2010
